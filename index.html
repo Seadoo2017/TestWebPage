@@ -10,6 +10,7 @@
 <script>
 function initPage()
 {
+alert(document.cookie);
 	if (document.cookie == "")
 	{
 		document.cookie = "1";
@@ -18,6 +19,8 @@ function initPage()
 	{
 		document.cookie = (number(document.cookie) + 1).toString();
 	}
+
+alert(document.cookie);
 	
 	document.getElementById('counter').textContent = document.cookie.toString();
 }
