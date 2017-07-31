@@ -10,17 +10,18 @@
 <script>
 function initPage()
 {
-alert(document.cookie);
 	if (document.cookie == "")
 	{
 		document.cookie = "1";
 	}
 	else
 	{
-		document.cookie = (number(document.cookie) + 1).toString();
+		var newCounter = (number(document.cookie) + 1);
+		
+		alert(newCounter);
+		
+		document.cookie = newCounter.toString();
 	}
-
-alert(document.cookie);
 	
 	document.getElementById('counter').textContent = document.cookie.toString();
 }
