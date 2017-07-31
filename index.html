@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="refresh" content="10"> <!-- Refresh every x seconds -->
+<meta http-equiv="refresh" content="2"> <!-- Refresh every x seconds -->
 </head>
-<body>
+<body onload="initPage()">
+
+<p>#<span id="counter"></span></p>
+
+<script>
+function initPage()
+{
+	if (document.cookie == "")
+	{
+		document.cookie = 1;
+	}
+	else
+	{
+		document.cookie = document.cookie + 1;
+	}
+	
+	document.getElementById('counter').textContent = document.cookie;
+}
+</script>
 
 </body>
 </html>
