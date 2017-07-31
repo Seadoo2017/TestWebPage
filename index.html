@@ -12,14 +12,14 @@ function initPage()
 {
 	if (document.cookie == "")
 	{
-		document.cookie = 1;
+		document.cookie = "1";
 	}
 	else
 	{
-		document.cookie = number(document.cookie) + 1;
+		document.cookie = (number(document.cookie) + 1).toString();
 	}
 	
-	document.getElementById('counter').textContent = document.cookie;
+	document.getElementById('counter').textContent = document.cookie.toString();
 }
 </script>
 
