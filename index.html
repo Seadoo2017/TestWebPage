@@ -16,19 +16,11 @@ function initPage()
 	}
 	else
 	{
-	
-	alert(document.cookie);
-	alert(Number(document.cookie));
-	alert(Number(document.cookie) + 1);
-	
-		var newCounter = (number(document.cookie) + 1);
-		
-		alert(newCounter);
-		
+		var newCounter = (Number(document.cookie) + 1);		
 		document.cookie = newCounter.toString();
 	}
 	
-	document.getElementById('counter').textContent = document.cookie.toString();
+	document.getElementById('counter').textContent = document.cookie;
 }
 </script>
 
