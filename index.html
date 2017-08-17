@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="refresh" content="5"> <!-- Refresh every x seconds -->
-</head>
-<body onload="initPage()">
-
-<p>#<span id="counter"></span></p>
 
 <script>
 function initPage()
@@ -23,6 +18,12 @@ function initPage()
 	document.getElementById('counter').textContent = document.cookie;
 }
 </script>
+
+<meta http-equiv="refresh" content="2"> <!-- Refresh every x seconds -->
+</head>
+<body onload="initPage()">
+
+<p>#<span id="counter"></span></p>
 
 </body>
 </html>
